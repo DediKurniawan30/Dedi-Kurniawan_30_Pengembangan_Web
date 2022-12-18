@@ -1,0 +1,226 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(249, 244, 250);
+}
+
+header {
+    background: rgb(74, 143, 223);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.logo {
+    margin-right: auto;
+    margin-left: 5px;
+    cursor: grab;
+    transition: all .5s;
+}
+
+.logo:hover {
+    color: rgb(242, 244, 247);
+}
+
+
+.button2 {
+margin-left: 10px;
+margin-bottom: 10px;
+margin-top: 10px;
+border: none;
+font-size: 50px;
+padding: 6px 12px;
+background: rgb(0, 0, 0);
+color: aliceblue;
+border-radius: 10px;
+cursor: pointer;
+transition: all .5s;
+}
+
+.button2:hover {
+    color: rgb(45, 80, 177);
+}
+
+nav ul {
+display: flex;
+padding: 20px;
+}
+
+li {
+list-style-type: none;
+padding: 15px;
+font-size: 20px;
+}
+
+li a:hover {
+    color: rgb(5, 5, 5);
+    transition: .5s;
+}
+
+a {
+    color: rgb(232, 234, 236);
+    text-decoration: none;
+}
+
+.content1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.title1 {
+    font-size: 40px;
+    color: rgb(36, 43, 49);
+}
+
+.title2 {
+    font-size: 25px;
+    color: rgb(49, 63, 75);
+}
+
+.foto1 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+}
+
+.spesifikasi1 {
+    background-image: url(IMG/cpu1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250vh;
+}
+
+.spesifikasi2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(74, 143, 223);
+    padding: 30px;
+    color: aliceblue;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+
+.card-item {
+    text-align: center;
+    width: 25%;
+    min-height: 200px;
+    max-height: 300px;
+    background: rgb(74, 143, 223);
+    color: black;
+    opacity: 0.8;
+    padding: 70px;
+    box-shadow: 2px 5px 5px 1px rgb(47, 40, 80);
+}
+
+.card-title1 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.card-title2 {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    padding: 4px;
+}
+
+.footer {
+	background: rgb(74, 143, 223);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-company {
+    color:  rgb(255, 255, 255);
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-desk {
+    color: white;
+}
+
+.footer-about {
+    color: white;
+    line-height: 20px;
+	font-size: 15px;
+	font-weight: normal;
+    text-align: justify;
+}
+
+.instagram {
+    width: 25px;
+    height: 25px;
+}
+
+.facebook {
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        gap: 0;
+    }
+    .card-item {
+        width: 100%;
+    }
+    .content1 {
+        width: 100%;
+        padding: 0;
+    }
+    .content2 {
+        margin-top: 20px;
+    }
+    nav {
+        position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: rgb(74, 143, 223);
+		z-index: 100;
+    }
+    .spesifikasi1 {
+    height: 250vh;
+    }
+}
